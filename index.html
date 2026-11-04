@@ -34,6 +34,26 @@ body{background:#15120e;background-image:radial-gradient(circle at 12% 8%,rgba(1
 .nav{border-color:rgba(247,241,231,.13)}.mark{background:#d6a35d;color:#20170e;box-shadow:none}.nav-cta,.button{background:#d6a35d;color:#20170e;box-shadow:none}.nav-cta:hover,.button:hover{background:#e4bb79}.nav-cta.discord-nav{background:#263a2c;border-color:#54725c;color:#f7f1e7}.nav-cta.discord-nav:hover{background:#344b39}.hero:before{background:radial-gradient(circle,rgba(142,100,54,.18),rgba(46,77,55,.11) 40%,transparent 70%)}h1 .accent{background:none;color:#d6a35d}.orb{background:radial-gradient(circle at 36% 26%,#eee0bc 0,#c98e4f 10%,#8e5d38 25%,#344838 50%,#121713 70%);box-shadow:0 0 95px rgba(91,112,77,.2),inset -35px -25px 70px #0c0c0a}.orb:before{border-color:rgba(214,163,93,.55)}.orb:after{border-color:rgba(112,149,121,.55)}.card{background:linear-gradient(145deg,rgba(44,37,29,.96),rgba(28,25,20,.96))}.card:hover{border-color:rgba(214,163,93,.58);box-shadow:0 18px 40px rgba(0,0,0,.25)}.icon{background:rgba(214,163,93,.13);color:#e1b575}.card:nth-child(2) .icon{background:rgba(95,126,104,.2);color:#a9c4ab}.card:nth-child(3) .icon{background:rgba(214,163,93,.13);color:#e1b575}.video:nth-child(1){background:linear-gradient(135deg,#58412d,#201a15)}.video:nth-child(2){background:linear-gradient(135deg,#314839,#1a211a)}.video:nth-child(3){background:linear-gradient(135deg,#5a4530,#201a15)}.discord{border-color:rgba(214,163,93,.4);background:radial-gradient(ellipse at 100% 0,rgba(95,126,104,.24),transparent 55%),#211d17}.discord-handle{color:#e1b575!important}.button svg,.nav-cta svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}.mobile-only{display:none}@media(max-width:760px){.top-socials{gap:7px}.nav-cta{width:42px;height:42px;padding:0;border-radius:50%}.nav-cta .button-label{display:none}.mobile-only{display:block}.button{min-height:46px}.button .button-label{display:inline}.actions .button svg{width:19px;height:19px}}
 .video.embed:before{display:none}.video.embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .youtube-nav{background:#a83a2a!important;border-color:#d46a57!important;color:#fff8f2!important}.youtube-nav:hover{background:#bf4c39!important}.nav,.hero>*,.section,.footer{animation:page-rise .7s cubic-bezier(.2,.75,.3,1) both}.hero>*,.section,.footer{animation-delay:.12s}.video.embed{background:#1b1813}.video-loader{position:absolute;inset:0;display:grid;place-items:center;background:linear-gradient(135deg,#30261d,#1e2920);z-index:1;transition:opacity .35s ease}.loader-ring{width:34px;height:34px;border:3px solid rgba(247,241,231,.28);border-top-color:#d6a35d;border-radius:50%;animation:spin .8s linear infinite}.video.embed iframe{opacity:0;transition:opacity .35s ease;z-index:2}.video.embed.loaded iframe{opacity:1}.video.embed.loaded .video-loader{opacity:0;pointer-events:none}@keyframes page-rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}@keyframes spin{to{transform:rotate(360deg)}}@media(max-width:760px){.brand{font-size:14px}.top-socials{gap:5px}}
+
+/* Quiet, tactile motion for the creator links and gaming/video previews. */
+.nav-cta,.button{transition:transform .24s cubic-bezier(.2,.75,.3,1),background-color .24s,box-shadow .24s,border-color .24s}
+.nav-cta svg,.button svg{transition:transform .24s cubic-bezier(.2,.75,.3,1)}
+.youtube-nav:hover,.youtube-nav:focus-visible{transform:translateY(-3px);box-shadow:0 8px 20px rgba(168,58,42,.24)}
+.youtube-nav:hover svg,.youtube-nav:focus-visible svg{transform:scale(1.1) rotate(-4deg)}
+.discord-nav:hover,.discord-nav:focus-visible{transform:translateY(-3px);box-shadow:0 8px 22px rgba(95,126,104,.24)}
+.discord-nav:hover svg,.discord-nav:focus-visible svg{transform:translateY(-2px) rotate(5deg)}
+.button:hover svg,.button:focus-visible svg{transform:scale(1.08)}
+.nav-cta:focus-visible,.button:focus-visible{outline:2px solid #f7f1e7;outline-offset:3px}
+.orb:before{animation:ring-drift 24s linear infinite}
+.orb:after{animation:ring-drift-reverse 32s linear infinite}
+.video{transition:transform .35s cubic-bezier(.2,.75,.3,1),border-color .35s,box-shadow .35s}
+.video:hover{transform:translateY(-4px);border-color:rgba(214,163,93,.42);box-shadow:0 12px 30px rgba(0,0,0,.2)}
+.video .play{transition:transform .3s cubic-bezier(.2,.75,.3,1),box-shadow .3s}
+.video:hover .play{transform:translate(-50%,-50%) scale(1.08);box-shadow:0 0 0 7px rgba(214,163,93,.14)}
+@keyframes ring-drift{to{transform:rotate(335deg) scaleY(.32)}}
+@keyframes ring-drift-reverse{to{transform:rotate(-325deg) scaleY(.26)}}
+@media(prefers-reduced-motion:reduce){.orb:before,.orb:after{animation:none!important}.nav-cta,.button,.nav-cta svg,.button svg,.video{transition:none!important}.video:hover,.nav-cta:hover,.button:hover{transform:none}}
+
 </style>
 </head>
 <body>
