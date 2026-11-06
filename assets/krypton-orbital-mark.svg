@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" fill="none" role="img" aria-label="Krypton Studios animated orbital mark">
+ <defs><linearGradient id="g" x1="38" y1="38" x2="200" y2="206" gradientUnits="userSpaceOnUse"><stop stop-color="#E6D0FF"/><stop offset=".52" stop-color="#A66AFF"/><stop offset="1" stop-color="#7141D8"/></linearGradient><filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+ <circle cx="120" cy="120" r="63" stroke="url(#g)" stroke-opacity=".7"/>
+ <ellipse cx="120" cy="120" rx="91" ry="37" stroke="url(#g)" transform="rotate(-34 120 120)"/>
+ <ellipse cx="120" cy="120" rx="91" ry="37" stroke="url(#g)" stroke-opacity=".65" transform="rotate(34 120 120)"/>
+ <path d="M120 70 156 120 120 170 84 120 120 70Z" stroke="url(#g)" stroke-width="2" filter="url(#glow)"/>
+ <circle cx="120" cy="120" r="7" fill="#E9D7FF" filter="url(#glow)"/>
+ <circle r="4" fill="#F5EFFF"><animateMotion dur="8s" repeatCount="indefinite" path="M 0 0 m -91,0 a 91,37 -34 1,0 182,0 a 91,37 -34 1,0 -182,0"/></circle>
+ <style>svg{animation:breathe 4s ease-in-out infinite}@keyframes breathe{50%{transform:scale(.96);opacity:.8}}@media(prefers-reduced-motion:reduce){svg{animation:none}}</style>
+</svg>
